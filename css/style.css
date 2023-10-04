@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+:root {
+    --bg-color-light: #ddd;
+    --bg-color-dark: #111;
+    --bg-color-md: #566456;
+    --white: #fff;
+    --p1-bg: #c978c1;
+    --p2-bg: #c98463;
+    --p3-bg: #76096b;
+    --p4-bg: #78c97b;
+    --p5-bg: #c97888;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* menu style */
+.navbar {
+    background-color: var(--p1-bg);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo,
+.navbar .menu a {
+    padding: 14px 10px;
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar .logo:hover,
+.navbar .menu a:hover{
+    background-color: var(--p4-bg);
+}
+
+/* container */
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color:  var(--white);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* form */
+.container .form {
+    height: inherit;
+    background-color:  var(--white);
+    margin: 100px;
+}
+
+.form .card {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: inset 2px 4px 5px rgba(0, 0, 0, 0.1), 3px 4px 3px rgba(0, 0, 0, 0.3);
+}
+.form .card .card-header {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.card .card-body {
+    padding: 20px;
+}
+.card .card-body .form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}   
+
+.card-body .form-group input{
+  padding: 12px 14px;
+  margin: 10px;
+  font-size: 1.2em;
+}
+.form-group label {
+    font-weight: bold;
+    color: var(--p3-bg);
+}
+
+.btn {
+    padding: 12px 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+ .btn-success {
+    background-color: var(--p4-bg);
+    color: var(--white);
+}
+.btn-warming {
+    background-color: var(--p1-bg);
+    color: var(--white);
+}
+
+.btn-danger {
+    background-color: brown;
+    color: var(--white);
+}
